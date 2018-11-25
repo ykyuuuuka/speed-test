@@ -4,28 +4,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/speed-test/resource/css/style.css">
 	<title>Speed-Test</title>
 </head>
 <body>
-	<h1>Rendering Optimizations</h1>
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th scope="col">#</th>
-				<th scope="col">Test Case</th>
-				<th scope="col">Test URL(Normalized | Optimized)</th>
-				<th scope="col">Sample Page(Normalized | Optimized)</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th scope="row">1</th>
-				<td>minify JS & async JS</td>
-				<td><a href="/speed-test/test/unasync/">Normalized</a> | <a href="/speed-test/test/async/">Optimized</a></td>
-				<td><a href="/speed-test/test/unasync_carousel/">Normalized</a> | <a href="/speed-test/test/async_carousel/">Optimized</a></td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="container">
+		<h1>Rendering Optimizations</h1>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Test Case</th>
+					<th scope="col">Test URL</th>
+					<th scope="col">Sample Page</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>minify JS & async JS</td>
+					<td><a href="/speed-test/test/unasync/">Normalized</a> | <a href="/speed-test/test/async/">Optimized</a></td>
+					<td><a href="/speed-test/test/unasync_carousel/">Normalized</a> | <a href="/speed-test/test/async_carousel/">Optimized</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 	<script async src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
